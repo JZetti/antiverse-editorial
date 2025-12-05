@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Antiverse: Cardiff Techbio That Treats Drug Discovery Like a Hard Problem Worth Solving</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #0e1320;
+      color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #151a29;
+      border-radius: 12px;
+      padding: 30px 24px 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    header {
+      border-bottom: 1px solid #252b3e;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: #a0aac4;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #c3d4ff;
+      margin-top: 6px;
+    }
+
+    a {
+      color: #76b0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      color: #e0e7ff;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+      color: #d5d9e6;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #c3d4ff;
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      background: #1d2437;
+      border-left: 4px solid #76b0ff;
+      padding: 12px 14px;
+      margin: 16px 0;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #cfd6f5;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 4px;
+    }
+
+    .pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #1e2740;
+      font-size: 0.8rem;
+      color: #bac4ff;
+      border: 1px solid #303a5c;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .stat {
+      flex: 1 1 120px;
+      background: #1b2235;
+      border-radius: 10px;
+      padding: 10px 12px;
+      text-align: center;
+      border: 1px solid #252f4b;
+    }
+
+    .stat-number {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: #a0aac4;
+      margin-top: 4px;
+    }
+
+    .footer-note {
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid #252b3e;
+      font-size: 0.85rem;
+      color: #9ca6c5;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 20px 16px 28px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Antiverse: Cardiff Techbio That Treats Drug Discovery Like A Hard Problem Worth Solving</h1>
+      <p>
+        By Jory Zettle, Whitworth University Computer Science
+      </p>
+      <p class="subhead">
+        Written for the Whitworth CS trip to Cardiff, Wales.
+      </p>
+      <p class="subhead">
+        Company site: 
+        <a href="https://www.antiverse.io/#what-we-do" target="_blank" rel="noopener">
+          https://www.antiverse.io
+        </a>
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <p class="tagline">
+          Antiverse is a Cardiff based techbio startup that uses machine learning and lab work together to design antibodies for some of the hardest drug targets out there.
+        </p>
+        <p>
+          When I started looking for a Welsh startup to write about, I did not want a company that just threw AI into their marketing and called it a day. Antiverse caught my eye because they are doing something very direct and very high stakes. They are trying to use generative models to design antibody drugs for targets that are usually considered too painful and too slow to work with, like certain G protein coupled receptors and ion channels.
+        </p>
+        <p>
+          Antiverse is based in Cardiff and sits in that weird but exciting intersection of structural biology, computer science and medicine. Their goal is simple to say and brutal to execute. Take a drug target, design an antibody that actually binds and behaves well, and do it in about six months instead of dragging the process out for years.
+        </p>
+      </section>
+
+      <section>
+        <h2>What Antiverse Actually Does</h2>
+        <p>
+          At a high level, Antiverse has built a platform that combines three things. A machine learning engine that proposes antibody sequences, a lab setup that can test those ideas in real cells and a data analysis pipeline that picks out the most promising candidates.
+        </p>
+        <p>
+          The company is not just randomly throwing models at biology. For each new target, they design a target specific antibody library. That means the model is not guessing in the dark. It is searching inside a smaller and smarter slice of antibody space that has a better chance of sticking to that particular target.
+        </p>
+
+        <h3>Machine Learning Design Engine</h3>
+        <p>
+          The machine learning side is where the platform starts. Antiverse trains generative models on antibody data so they can propose new sequences that look like they could bind a specific target. The important part is that they do not need a giant stack of data for every single new target before they can begin. Their models can still make educated guesses about high binding probability sequences based on what they have learned from other projects.
+        </p>
+        <div class="highlight">
+          As a CS student, this feels familiar. It is like using a strong pre trained model and then nudging it toward a new problem instead of starting from nothing. You let the model carry what it has learned about good antibody shapes into the next round.
+        </div>
+
+        <h3>State Of The Art Lab Work</h3>
+        <p>
+          Once the virtual library is designed, it has to survive the real world. Antiverse prepares cell lines that express a ton of the target receptor on the cell surface. Then they screen their designed antibody library against those cells. The more copies of the receptor the cells carry, the easier it is to pick out antibodies that actually bind with decent affinity instead of just brushing past.
+        </p>
+        <p>
+          This part matters because a model can say a sequence looks good on paper, but biology gets the final vote. Their lab work is the reality check that filters out sequences that looked smart in the model but fall flat in a real system.
+        </p>
+
+        <h3>Screening, Sequencing And Clustering</h3>
+        <p>
+          After panning and screening, they send the outputs for deep sequencing. That gives them a huge list of antibody sequences that showed up during the experiment. From there, the data team clusters sequences using a set of different properties instead of just one score.
+        </p>
+        <p>
+          These properties can include things like how likely the antibody is to bind the target, how stable it looks, how developable it is for a real drug and how close it is to natural human antibodies. By clustering across many properties at once, they can pick lead candidates that are not just strong binders, but also have a better chance of becoming a real therapeutic and not falling apart halfway through the process.
+        </p>
+      </section>
+
+      <section>
+        <h2>The Edge They Claim To Have</h2>
+        <p>
+          On their site, Antiverse talks about the advantages of their platform compared to older antibody discovery pipelines. A few things stand out.
+        </p>
+
+        <h3>Hard Targets, On Purpose</h3>
+        <p>
+          They have spent years working on projects built around difficult targets, especially GPCRs and ion channels. These molecules are tricky, but also important in a lot of diseases. A large chunk of existing drugs already hit GPCRs, yet there are still not many antibody drugs against them. Antiverse is trying to fill that gap by training their models on these harder problems instead of avoiding them.
+        </p>
+
+        <h3>Strategic Antibody Design</h3>
+        <p>
+          Because they cluster sequences using many different properties, they can select antibodies with specific behaviors instead of only aiming for any binder. They talk about being able to focus on particular epitopes on a target, adjust physicochemical properties and tune how human like the antibody is, all at the same time.
+        </p>
+
+        <h3>Speed And Scale</h3>
+        <p>
+          Antiverse says that their approach lets them move from target identification to functional antibody in about six months. For something as complex as antibody discovery, that is a very aggressive timeline. They also show that they have already screened multiple targets, have partnerships with big pharmaceutical companies and plan to scale to many more programs over the next few years.
+        </p>
+
+        <div class="pill-row">
+          <div class="pill">Cardiff techbio</div>
+          <div class="pill">Generative models</div>
+          <div class="pill">Challenging targets</div>
+          <div class="pill">High throughput lab</div>
+          <div class="pill">Deep sequencing</div>
+          <div class="pill">Partner ready</div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-number">13</div>
+            <div class="stat-label">Targets screened</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Pharma partnerships</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">9</div>
+            <div class="stat-label">Active programmes</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">100</div>
+            <div class="stat-label">Programmes planned by 2025</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why I Chose Antiverse</h2>
+        <p>
+          For this Cardiff trip, I wanted a company that matched how I think about problems. Antiverse feels like a team that looked at a part of medicine most people avoid and said, we will take that fight. They treat antibody design like a search problem with brutal constraints, and then build tools to push through those constraints anyway.
+        </p>
+        <p>
+          As a computer science student, I like how their work is basically one long pipeline. You start with a target. You design a focused library with a model that has seen a lot of antibody data. You hit the target in real cells. You pull out the sequences that survived. You analyze them across many dimensions and then choose leads you can actually ship further down the drug discovery path.
+        </p>
+        <p>
+          It is not magic. It is structured, messy problem solving. That is the part that connects with me. They are not just trying to be an AI company. They are trying to be a company that makes new medicines real, and AI is one of the sharp tools they carry into that fight.
+        </p>
+      </section>
+
+      <section>
+        <h2>What This Says About Welsh Tech</h2>
+        <p>
+          Antiverse also says something about the kind of work happening in Wales. This is not a small side project. They have grown, raised funding and partnered with major pharma groups while staying rooted in Cardiff. It shows that you can build serious deep tech and life science companies there, not just in London or Silicon Valley.
+        </p>
+        <p>
+          For me as a visitor, it is a reminder that the future of tech is not only apps and websites. It is also wet labs, cell lines, sequences and models running in the background to push medicine forward. Wales playing in that space is part of what makes this trip interesting.
+        </p>
+      </section>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          Antiverse is not the kind of startup that shows up on a random app store. You will not download their product to your phone. Instead, they are working behind the scenes on something slower and heavier. Making antibodies for the kinds of targets that most people write off as too complicated or too slow to chase.
+        </p>
+        <p>
+          That is exactly why I picked them. They take a hard problem, stack biology and machine learning together and try to move the timeline from years to months. For a computer science student heading to Cardiff, this is the kind of company that makes the trip feel grounded in something real. Not just tourism, but a glimpse into how people in Wales are trying to change the future of drug discovery.
+        </p>
+      </section>
+
+      <p class="footer-note">
+        All factual information in this editorial comes from Antiverse's official website and public articles about the company. Interpretation and opinions are my own.
+      </p>
+    </main>
+  </div>
+</body>
+</html>
